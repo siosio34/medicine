@@ -1,0 +1,624 @@
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true;IE=edge">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://terms.naver.com/medicineSearch.nhn?">
+<meta property="og:title" content="의약품사전">
+<meta property="og:image" content="http://static.naver.net/terms/terms/img/terms_icon_200x200.png">
+<meta property="og:description" content="http://terms.naver.com/medicineSearch.nhn?">
+<meta property="og:article:author" content="네이버 지식백과"/>
+<meta property="og:article:author:url" content="http://m.terms.naver.com"/>
+<meta name="viewport" content="width=1110" />
+
+
+
+<title>의약품사전 : 지식백과</title>
+
+
+
+<link rel="stylesheet" type="text/css" href="http://static.naver.net/terms/tlist/css/tlist_add_card_150916.css">
+<link rel="stylesheet" type="text/css" href="http://static.naver.net/terms/terms/css/terms_150924_v2.css">
+
+
+
+
+<link rel="shortcut icon" href="http://www.naver.com/favicon.ico" type="image/x-icon"><style id="gnb_style" type="text/css">@charset "UTF-8";/* NTS UIT Development Office YJH 140717 */a.gnb_my, .gnb_icon, #gnb .gnb_my_interface, #gnb .gnb_ico_num .gnb_ico_new, #gnb .gnb_ico_num .gnb_ico_new .gnb_count, .gnb_lst .ico_arrow, .gnb_my_li .gnb_my_content .gnb_mask, .gnb_my_li .gnb_my_content .gnb_change, .gnb_my_li .gnb_my_content .gnb_edit_lst li, .gnb_my_li .gnb_my_content .gnb_pay_check em, .gnb_my_lyr, .gnb_my_community a.gnb_pay span, .gnb_notice_li .gnb_notice_lyr, .gnb_notice_li .svc_list .gnb_ico_mail, .gnb_notice_li .svc_list .gnb_btn_remove span, .gnb_notice_li .svc_list .gnb_btn_remove i, .gnb_notice_li .gnb_error .gnb_ico_error, .gnb_ly_alert .gnb_btn_close i, .gnb_first_visit, .gnb_favorite_lst .gnb_add a, .gnb_search_box, .gnb_search_box .gnb_del_txt, .gnb_svc_more .gnb_svc_lstwrp li.gnb_event em.ic_gnb_new, .gnb_svc_more .svc_btnwrp button{background:url(http://static.naver.net/common/gnb/2014/sp_gnb_v9.png) no-repeat -999px -999px}.gnb_favorite_area, .gnb_search_area, .gnb_banner, .gnb_linkwrp{background:url(http://static.naver.net/common/gnb/2014/bg_svclyr2_v2.png) no-repeat -999px -999px}.gnb_my_community a, .gnb_notice_li .gnb_notice_all, a.gnb_service_all, .gnb_svc_more .svc_btns{display:block;height:38px;border-top:1px solid #ebebeb;background-color:#f8f8f8;text-align:center;font-weight:bold;text-decoration:none;letter-spacing:-1px;line-height:38px}.gnb_my_community a:visited, .gnb_notice_li .gnb_notice_all:visited, a.gnb_service_all:visited, .gnb_svc_more .svc_btns:visited{color:#444}.gnb_login_li, .gnb_my_li, .gnb_notice_li, .mail_li, .gnb_service_li{float:left;margin-right:2px;overflow:visible}.gnb_login_li a, .gnb_my_li a, .gnb_notice_li a, .mail_li a, .gnb_service_li a{position:relative;z-index:100}a.gnb_my, .gnb_icon{position:relative}#gnb{position:relative;z-index:2147483646;font-family:'나눔고딕',NanumGothic,'돋움',Dotum,'Apple SD Gothic Neo',Helvetica,Sans-serif !important;color:#444;font-size:12px;letter-spacing:0 !important;line-height:normal !important;text-align:left !important}#gnb div, #gnb p, #gnb span, #gnb em, #gnb strong, #gnb h1, #gnb h2, #gnb h3, #gnb h4, #gnb h5, #gnb h6, #gnb ul, #gnb ol, #gnb li, #gnb dl, #gnb dt, #gnb dd, #gnb table, #gnb th, #gnb td, #gnb form, #gnb fieldset, #gnb legend, #gnb input, #gnb textarea, #gnb button, #gnb label{font-family:'나눔고딕',NanumGothic,'돋움',Dotum,'Apple SD Gothic Neo',Helvetica,Sans-serif !important}#gnb a, #gnb label, #gnb button{cursor:pointer}#gnb a, #gnb a:visited, #gnb a:active, #gnb a:focus{color:#444}#gnb a:hover{color:#444;text-decoration:underline}#gnb input::-ms-clear{display:none}#gnb em{font-style:normal}#gnb ul{list-style:none}#gnb .blind{display:block;overflow:hidden;position:absolute;top:-1000em;left:0;width:1px;height:1px;margin:0;padding:0;font-size:0;line-height:0}#gnb .gnb_my_interface{padding:5px;position:absolute;top:12px;right:8px;display:block;width:17px;height:16px;background-position:-90px 5px}#gnb .gnb_my_interface:hover{background-position:-90px -20px}#gnb .gnb_pad_lyr{position:absolute}#gnb .gnb_ico_num{display:block;position:absolute;top:1px;width:40px;text-align:center}#gnb .gnb_ico_num .gnb_ico_new{height:15px;display:inline-block;background-position:-331px 0;zoom:1}#gnb .gnb_ico_num .gnb_ico_new .gnb_count{position:relative;top:0;right:-5px;height:15px;margin:0;padding:0 4px 0 1px;display:inline-block;*display:inline;background-position:100% 0;text-indent:-2px;font-family:tahoma !important;font-weight:bold;color:#fff;zoom:1}#gnb .gnb_ico_num .gnb_ico_new .plus{margin:1px -1px 0 2px;font-size:8px;display:inline-block;color:#fff;vertical-align:top}:root #gnb .gnb_pad_lyr{opacity:1 !important;background:#fff}.gnb_lst{margin:0;padding:0;zoom:1}.gnb_lst:after{display:block;clear:both;content:''}.gnb_lst ul{margin:0;padding:0}.gnb_lst .ico_arrow{display:none;position:absolute;left:50%;top:27px;width:10px;height:8px;margin-left:-5px;background-position:-175px -10px}.gnb_lyr_opened .gnb_my_lyr, .gnb_lyr_opened .gnb_service_lyr, .gnb_lyr_opened .gnb_notice_lyr, .gnb_lyr_opened .ico_arrow{display:block !important}.gnb_login_li{padding:5px 7px 0 0}.gnb_btn_login, .gnb_bg, .gnb_bdr{display:inline-block;width:46px;height:20px;font-size:12px}.gnb_btn_login{position:relative}.gnb_bg{background-color:#fff}.gnb_bdr{position:absolute;top:0;left:0;width:44px;height:18px;border:1px solid #000;opacity:0.15;filter:alpha(opacity=15)}.gnb_txt{position:absolute;top:0;left:0;width:45px;height:20px;padding-left:1px;line-height:21px;color:#666;text-align:center}.gnb_btn_login:hover{text-decoration:none !important}.gnb_btn_login:hover .gnb_bdr{opacity:0.35;filter:alpha(opacity=35)}.gnb_account .gnb_btn_login{width:54px;margin:-1px 0 0 4px;vertical-align:top}.gnb_account .gnb_bdr{width:52px}.gnb_account .gnb_txt{width:53px}.gnb_my_li{margin-right:7px}.gnb_my_namebox{padding:2px 9px 0 0;background-repeat:no-repeat;background-position:100% 50%;zoom:1}.gnb_my_namebox:after{display:block;clear:both;content:''}a.gnb_my{float:left;display:block;font-size:0;vertical-align:middle}a.gnb_my img{vertical-align:top;border-radius:16px}a.gnb_my .gnb_name{margin-right:-1px;padding-left:5px;display:inline-block;height:28px;line-height:28px;vertical-align:top;font-size:11px;color:#444}a.gnb_my:visited{color:#444}a.gnb_my:hover, a.gnb_my:active, a.gnb_my:visited, a.gnb_my:focus{text-decoration:none !important}a.gnb_my:hover .gnb_name{text-decoration:underline}a.gnb_my .ico_arrow{top:25px;margin-left:8px}.gnb_my_namebox a.gnb_emp{float:left;display:inline-block;height:28px;margin-left:3px;line-height:28px;font-size:11px;color:#777 !important}.gnb_my_lyr{display:none;position:absolute;top:26px;right:-8px;padding:9px 5px 4px 4px;width:316px;height:172px;background-position:-2px -1310px;z-index:10}.gnb_my_lyr.gnb_groupid{height:144px;background-position:-2px -1500px}.gnb_my_lyr.gnb_groupid .gnb_my_content{height:80px}.gnb_my_lyr.gnb_groupid.gnb_longid1{height:144px;background-position:-2px -1664px}.gnb_my_lyr.gnb_groupid.gnb_longid2{height:144px;background-position:-2px -1828px}.gnb_my_lyr.gnb_longid1{width:318px;background-position:-2px -1118px}.gnb_my_lyr.gnb_longid2{width:348px;background-position:-2px -926px}.gnb_my_li .gnb_my_content{zoom:1;height:108px;padding:15px 0 10px 15px}.gnb_my_li .gnb_my_content:after{display:block;clear:both;content:''}.gnb_my_li .gnb_my_content .gnb_img_area{float:left;position:relative;display:block;width:80px}.gnb_my_li .gnb_my_content .gnb_img_area img{vertical-align:top}.gnb_my_li .gnb_my_content .gnb_mask{position:absolute;top:0;left:0;display:block;width:80px;height:80px;background-position:-70px -60px}.gnb_my_li .gnb_my_content .gnb_change{position:absolute;bottom:-2px;left:-2px;display:block;width:28px;height:28px;background-position:-140px 0px}.gnb_my_li .gnb_my_content .gnb_change:hover{background-position:-140px -30px}.gnb_my_li .gnb_my_content .gnb_txt_area{float:left;width:212px;margin:5px 0 0 9px}.gnb_longid1 .gnb_my_content .gnb_txt_area{width:210px}.gnb_longid2 .gnb_my_content .gnb_txt_area{width:235px}.gnb_my_li .gnb_my_content .gnb_account{margin-bottom:3px;font-size:0}.gnb_my_li .gnb_my_content .gnb_name{color:#777;font-size:14px}.gnb_my_li .gnb_my_content .gnb_name a{display:inline-block;vertical-align:top;font-weight:bold;color:#444}.gnb_my_li .gnb_my_content a.gnb_mail_address{font-family:tahoma;color:#777 !important;font-size:14px}.gnb_my_li .gnb_my_content .gnb_edit_lst{zoom:1;margin-top:9px !important}.gnb_my_li .gnb_my_content .gnb_edit_lst:after{display:block;clear:both;content:''}.gnb_my_li .gnb_my_content .gnb_edit_lst li{float:left;padding-left:8px;margin-left:8px;background-position:-290px -25px}.gnb_my_li .gnb_my_content .gnb_edit_lst li.gnb_info{padding-left:0;margin-left:0;background:none}.gnb_my_li .gnb_my_content .gnb_edit_lst a{color:#019a30 !important;text-decoration:underline;letter-spacing:-1px}.gnb_my_li .gnb_my_content .gnb_pay_check{height:16px;margin:16px -4px 0 0 !important}@media screen and (min-width: 0\0) { .gnb_my_li .gnb_my_content .gnb_pay_check{margin-top:17px} }.gnb_my_li .gnb_my_content .gnb_pay_check em{display:inline-block;width:16px;height:16px;background-position:-300px -309px;margin:0 4px 0 0;overflow:hidden;font-size:0;line-height:0;vertical-align:top}.gnb_my_li .gnb_my_content .gnb_pay_check a{font-size:14px;letter-spacing:-1px;line-height:16px;vertical-align:top}.gnb_my_li .gnb_my_content .gnb_pay_check span{padding-right:5px}.gnb_my_li .gnb_my_content .gnb_pay_check strong{font-family:tahoma;letter-spacing:0;word-spacing:-30px}.gnb_my_li .gnb_my_content .gnb_pay_check a, .gnb_my_li .gnb_my_content .gnb_pay_check span, .gnb_my_li .gnb_my_content .gnb_pay_check strong{font-size:14px;color:#019a30 !important}.gnb_my_community{clear:both;zoom:1}.gnb_my_community:after{display:block;clear:both;content:''}.gnb_my_community a{float:left;width:106px;border-right:1px solid #ebebeb}.gnb_my_community a.gnb_pay{width:102px;border-right:0;line-height:0}.gnb_my_community a.gnb_pay span{display:inline-block;width:41px;height:16px;background-position:-300px -334px;margin:11px auto 0;font-size:0;line-height:0}.gnb_my_community a:active, .gnb_my_community a:focus, .gnb_my_community a:visited{text-decoration:none !important}.gnb_my_community a:hover{text-decoration:underline !important}.gnb_longid1 .gnb_my_community a{width:105px}.gnb_longid1 .gnb_my_community a.gnb_pay{width:106px}.gnb_longid2 .gnb_my_community a{width:115px}.gnb_longid2 .gnb_my_community a.gnb_pay{width:116px}.gnb_notice_li a.gnb_notice{display:block;width:15px;height:17px;padding:7px 9px 4px;text-decoration:none !important}.gnb_notice_li a.gnb_notice .gnb_ico_num{left:1px;top:0}.gnb_notice_li a.gnb_notice .gnb_icon{display:block;width:15px;height:17px;background-position:-3px -60px}.gnb_notice_li a.gnb_notice:hover .gnb_icon{background-position:-38px -60px;text-decoration:none !important}.gnb_notice_li .gnb_notice_lyr{display:none;positi…
+</style><script src="http://static.gn.naver.net/js/clickcrD.js" id="gnb_clickcrD" charset="utf-8"></script>
+
+
+
+
+
+</head><ul class="thmb_lst">
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2134512">
+			<a href="/entry.nhn?docId=2134512&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2134512" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711132802934_81GUBZ772.jpg/A11A0450A008501.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="페니라민정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2134512" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2134512&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711132802934_81GUBZ772.jpg/A11A0450A008501.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="페니라민정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2134512"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2134512&cid=51000&categoryId=51000"><strong>페니라민정 [Peniramin Tab.]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2134512" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 미황색의 원형 정제 · 제형 : 나정 · 모양 : 원형 · 색상 : 노랑 · 식별표기 : YH [성분정보] 클로르페니라민말레산염 2mg [저장방법] 실온, 건소, 밀폐용기, [효능효과] 고초열, 두드러기, 소양성 피부질환(습진ㆍ피부염, 피부소양증, 약진), 알레르기성 비염, 혈관운동성 비염, 코감기에 의한 재채기ㆍ콧물ㆍ기침...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>212,074</em></span>
+				
+				<span class="opinion on like-area" id="like2134512" data-serviceId="ENCYCLOPEDIA" data-docId="2134512" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2140285">
+			<a href="/entry.nhn?docId=2140285&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2140285" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711144914547_05C85NOGS.jpg/A11A4290B001501.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="소론도정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2140285" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2140285&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711144914547_05C85NOGS.jpg/A11A4290B001501.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="소론도정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2140285"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2140285&cid=51000&categoryId=51000"><strong>소론도정 [Solondo Tab.]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2140285" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 흰색의 원형정제 · 제형 : 나정 · 모양 : 원형 · 색상 : 하양 · 분할선 : - · 식별표기 : YM, P 분할선 5 [성분정보] 프레드니솔론 5mg [저장방법] 기밀용기 [효능효과] 1. 내분비 장애 : 원발성 및 속발성 부신피질기능부전증, 선천성 부신이상증식, 암에 수반된 고칼슘혈증, 비화농성 갑상선염 2. 류마티스성 장애 급성진행...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>181,097</em></span>
+				<span class="opinion on">의견<em>3</em></span>
+				<span class="opinion on like-area" id="like2140285" data-serviceId="ENCYCLOPEDIA" data-docId="2140285" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2134728">
+			<a href="/entry.nhn?docId=2134728&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2134728" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711133014808_V7UHHI01C.jpg/A11A0500A011203.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="슈다페드정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2134728" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2134728&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711133014808_V7UHHI01C.jpg/A11A0500A011203.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="슈다페드정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2134728"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2134728&cid=51000&categoryId=51000"><strong>슈다페드정 [Pseudafed Tab. 60mg]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2134728" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 흰색의 원형 정제 · 제형 : 나정 · 모양 : 원형 · 색상 : 하양 · 분할선 : +, + · 식별표기 : 마크분할선SD 분할선 마크분할선SD, 마크분할선SD 분할선 마크분할선SD [성분정보] 수도에페드린염산염 60mg [저장방법] 기밀용기 또는 밀폐용기, 실온보존 [효능효과] 1. 주효능 효과 다음 질환에 의한 비충혈 : 감기...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>185,726</em></span>
+				<span class="opinion on">의견<em>3</em></span>
+				<span class="opinion on like-area" id="like2134728" data-serviceId="ENCYCLOPEDIA" data-docId="2134728" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2141541">
+			<a href="/entry.nhn?docId=2141541&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2141541" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711151358347_UETO2AJNX.jpg/A11ABBBBB203501.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="알비스정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2141541" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2141541&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711151358347_UETO2AJNX.jpg/A11ABBBBB203501.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="알비스정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2141541"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2141541&cid=51000&categoryId=51000"><strong>알비스정 [Albis Tab.]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2141541" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 이약은 원형의 흰색 필름코팅정제이다. · 제형 : 필름코팅정 · 모양 : 원형 · 색상 : 하양 · 식별표기 : D.W [성분정보] 비스무트시트르산염칼륨 100mg, 라니티딘염산염 84mg(라니티딘 75mg), 수크랄페이트 300mg [저장방법] 밀폐용기, 실온보관 [효능효과] 위궤양, 위염, 십이지장궤양, 졸링거엘리슨 증후군, 역류성...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>185,756</em></span>
+				<span class="opinion on">의견<em>2</em></span>
+				<span class="opinion on like-area" id="like2141541" data-serviceId="ENCYCLOPEDIA" data-docId="2141541" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2141231">
+			<a href="/entry.nhn?docId=2141231&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2141231" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711150447975_0P30PEHTM.jpg/A11ABBBBB115302.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="리보트릴정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2141231" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2141231&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711150447975_0P30PEHTM.jpg/A11ABBBBB115302.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="리보트릴정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2141231"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2141231&cid=51000&categoryId=51000"><strong>리보트릴정 [Rivotril Tab.]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2141231" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 엷은 주황색의 원형 정제 · 제형 : 나정 · 모양 : 원형 · 색상 : 주황 · 분할선 : - · 식별표기 : ROCHE 0.5, 분할선 [성분정보] 클로나제팜 0.5mg [저장방법] 저장방법 : 기허가사항과 동일 [효능효과] 1. 간질 및 부분발작(초점발작) 2. 원발성 및 2차적으로 전신화된 강직간대발작(대발작) 3. 유·소아 간질(특히 정형성...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>125,079</em></span>
+				
+				<span class="opinion on like-area" id="like2141231" data-serviceId="ENCYCLOPEDIA" data-docId="2141231" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2144478">
+			<a href="/entry.nhn?docId=2144478&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2144478" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711154709781_KRJN2EAPE.jpg/A11AIIIII000602.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="가스모틴정5mg">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2144478" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2144478&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711154709781_KRJN2EAPE.jpg/A11AIIIII000602.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="가스모틴정5mg"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2144478"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2144478&cid=51000&categoryId=51000"><strong>가스모틴정5mg [Gasmotin Tab. 5mg]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2144478" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 이약은 분할선을 가진 백색의 장방형 필름코팅정제이다 · 제형 : 나정 · 모양 : 장방형 · 색상 : 하양 · 분할선 : - · 식별표기 : D.W, 분할선 [성분정보] 모사프리드시트르산염수화물 5.29mg [저장방법] 밀폐용기, 실온보관(1~30℃) [효능효과] [허가사항변경(2011년 재평가), 의약품관리과-6843, 2012.12.31)] (정제)...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>145,191</em></span>
+				
+				<span class="opinion on like-area" id="like2144478" data-serviceId="ENCYCLOPEDIA" data-docId="2144478" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2138943">
+			<a href="/entry.nhn?docId=2138943&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2138943" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711142422559_E05XTI5PN.jpg/A11A2140A022101.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="뮤코라제정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2138943" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2138943&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711142422559_E05XTI5PN.jpg/A11A2140A022101.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="뮤코라제정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2138943"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2138943&cid=51000&categoryId=51000"><strong>뮤코라제정 [Mucolase Tab.]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2138943" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 미황색의 원형정제. · 제형 : 나정 · 모양 : 원형 · 색상 : 주황 · 분할선 : - · 식별표기 : HMP, MCL 분할선 [성분정보] 스트렙토키나제-스트렙토도르나제가루 5mg( 스트렙토키나제로서 10000단위, 스트렙토도르나제로서 2500단위) [저장방법] 기밀용기, 실온(1 ~ 30℃)보관 사용기간:제조일로부터 18개월 (수출용...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>135,912</em></span>
+				
+				<span class="opinion on like-area" id="like2138943" data-serviceId="ENCYCLOPEDIA" data-docId="2138943" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2141123">
+			<a href="/entry.nhn?docId=2141123&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2141123" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711150157551_C7IWVYBTS.jpg/A11ABBBBB090302.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="인데놀정10mg">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2141123" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2141123&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711150157551_C7IWVYBTS.jpg/A11ABBBBB090302.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="인데놀정10mg"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2141123"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2141123&cid=51000&categoryId=51000"><strong>인데놀정10mg [Indenol Tab. 10mg]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2141123" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 백색의 정제 · 제형 : 나정 · 모양 : 원형 · 색상 : 하양 · 식별표기 : DK, 10 [성분정보] 염산프로프라놀롤 10mg [저장방법] 차광밀폐용기 [효능효과] 1. 기외수축(상실성, 심실성), 발작성빈맥의 예방, 빈맥성심방세동, 발작성심방세동, 동빈맥, 협심증, 고혈압, 비후성대동맥판하협착증, 크롬친화세포종 2....</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>112,975</em></span>
+				
+				<span class="opinion on like-area" id="like2141123" data-serviceId="ENCYCLOPEDIA" data-docId="2141123" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2140308">
+			<a href="/entry.nhn?docId=2140308&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2140308" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711144947991_3NEPY4Q9W.jpg/A11A4380A004701.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="타이레놀정500mg">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2140308" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2140308&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711144947991_3NEPY4Q9W.jpg/A11A4380A004701.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="타이레놀정500mg"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2140308"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2140308&cid=51000&categoryId=51000"><strong>타이레놀정500mg [Tylenol Tab. 500mg]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2140308" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 백색의 장방형 필름코팅정제 · 제형 : 필름코팅정 · 모양 : 장방형 · 색상 : 하양 · 식별표기 : TYLENOL, 500 [성분정보] 아세트아미노펜 500mg [저장방법] 밀폐용기, 실온보관(1-30℃) [효능효과] 1. 주효능·효과 감기로 인한 발열 및 동통(통증), 두통, 신경통, 근육통, 월경통, 염좌통(삔 통증) 2. 다음 질환에도 사용할...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>122,939</em></span>
+				<span class="opinion on">의견<em>3</em></span>
+				<span class="opinion on like-area" id="like2140308" data-serviceId="ENCYCLOPEDIA" data-docId="2140308" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2133029">
+			<a href="/entry.nhn?docId=2133029&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2133029" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711131951688_83DRLJ8JB.jpg/A11A0100A008003.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="씨제이후라시닐정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2133029" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2133029&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711131951688_83DRLJ8JB.jpg/A11A0100A008003.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="씨제이후라시닐정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2133029"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2133029&cid=51000&categoryId=51000"><strong>씨제이후라시닐정 [Flasinyl Tablets CJ]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2133029" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 백색의 원형정제이다. · 제형 : 나정 · 모양 : 원형 · 색상 : 하양 · 분할선 : - · 식별표기 : FLA 분할선 [성분정보] 메트로니다졸 250mg [저장방법] 기밀용기, 실온보존 [효능효과] 1. 트리코모나스증 2. 혐기성균 감염증 : 복부내감염증(복막염, 복부내농양, 간농양 등), 피부 및 피부조직 감염증, 부인과 감염증...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>107,838</em></span>
+				<span class="opinion on">의견<em>1</em></span>
+				<span class="opinion on like-area" id="like2133029" data-serviceId="ENCYCLOPEDIA" data-docId="2133029" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2141235">
+			<a href="/entry.nhn?docId=2141235&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2141235" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711150454685_7KSBWXT5U.jpg/A11ABBBBB116801.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="마그밀정500mg">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2141235" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2141235&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711150454685_7KSBWXT5U.jpg/A11ABBBBB116801.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="마그밀정500mg"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2141235"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2141235&cid=51000&categoryId=51000"><strong>마그밀정500mg [Magmil Tab. 500mg]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2141235" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 박하미가 있는 백색의 원형정제 · 제형 : 나정 · 모양 : 원형 · 색상 : 하양 · 식별표기 : 마크, 마크 [성분정보] 수산화마그네슘 500mg [저장방법] 밀폐용기, 실온(1～30℃)보관 [효능효과] 1. 주효능 효과 1) 다음 질환의 제산작용 및 증상의 개선 : 위·십이지장궤양, 위염, 위산과다 2) 변비증 [용법용량] 1. 성인 1)...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>104,931</em></span>
+				<span class="opinion on">의견<em>2</em></span>
+				<span class="opinion on like-area" id="like2141235" data-serviceId="ENCYCLOPEDIA" data-docId="2141235" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2135883">
+			<a href="/entry.nhn?docId=2135883&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2135883" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711134757019_FJR114R8V.jpg/A11A0950A004301.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="보나링에이정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2135883" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2135883&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711134757019_FJR114R8V.jpg/A11A0950A004301.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="보나링에이정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2135883"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2135883&cid=51000&categoryId=51000"><strong>보나링에이정 [Bonaling-A Tab.]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2135883" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 국내용: 흰색의 원형정제 · 제형 : 나정 · 모양 : 원형 · 색상 : 하양 · 분할선 : - · 식별표기 : BN 분할선 BN [성분정보] 디멘히드리네이트 50mg [저장방법] 밀폐용기 [효능효과] 1. 주효능·효과 1) 멀미·메니에르증후군·방사선숙취에 의한 구역·구토·어지러움 2) 수술후 구역·구토 [용법용량] 성인...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>93,795</em></span>
+				<span class="opinion on">의견<em>1</em></span>
+				<span class="opinion on like-area" id="like2135883" data-serviceId="ENCYCLOPEDIA" data-docId="2135883" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2126899">
+			<a href="/entry.nhn?docId=2126899&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2126899" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711113351311_XFIBBF60U.jpg/201105180000302.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="모티리톤정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2126899" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2126899&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711113351311_XFIBBF60U.jpg/201105180000302.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="모티리톤정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2126899"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2126899&cid=51000&categoryId=51000"><strong>모티리톤정 [Motilitone Tab.]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2126899" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 분홍색의 타원형 필름코팅정 · 제형 : 필름코팅정 · 모양 : 타원형 · 색상 : 분홍 · 식별표기 : MTL, 30 [성분정보] 현호색·견우자(5:1)50%에탄올연조엑스(10→1) 30mg [저장방법] 기밀용기, 실온(1~30℃)보관 [효능효과] 기능성 소화불량증 [용법용량] 보통 성인은 1일 3회 1회 1정을 식전에 경구 투여한다....</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>97,402</em></span>
+				
+				<span class="opinion on like-area" id="like2126899" data-serviceId="ENCYCLOPEDIA" data-docId="2126899" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2140277">
+			<a href="/entry.nhn?docId=2140277&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2140277" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711144854615_XUH3DWDGI.jpg/A11A4270A001401.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="무코스타정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2140277" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2140277&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20140711144854615_XUH3DWDGI.jpg/A11A4270A001401.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="무코스타정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2140277"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2140277&cid=51000&categoryId=51000"><strong>무코스타정 [Mucosta Tab.]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2140277" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 백색의 원형필름코팅정 · 제형 : 필름코팅정 · 모양 : 원형 · 색상 : 하양 · 식별표기 : OG 33 [성분정보] 레바미피드 100mg [저장방법] 차광밀폐용기, 실온보관(1~30℃) [효능효과] [허가사항변경(2011년 재평가), 의약품관리과-6843, 2012.12.31)] (정제) 1. 위궤양 2. 다음 질환의 위점막병변(미란,출혈,발적,부종)의 개선...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>104,880</em></span>
+				
+				<span class="opinion on like-area" id="like2140277" data-serviceId="ENCYCLOPEDIA" data-docId="2140277" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	
+	
+	<li><!--#mon/list#-->
+		
+		<span class="thmb_w id2158981">
+			<a href="/entry.nhn?docId=2158981&cid=51000&categoryId=51000" class="thmb">
+				<span class="mask"></span>
+				<img onerror="this.className='listThumbnail'" data-id="id2158981" class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20150128173107400_YQAUAGNGM.jpg/A11AOOOOO742504.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" alt="바리다제정">
+				
+			</a><!-- N=a:tml.img -->
+			
+			
+		</span>
+		
+		<div class="open_w id2158981" style="display:none">
+			<span class="img_box">
+				
+					<a href="/entry.nhn?docId=2158981&cid=51000&categoryId=51000" onclick="clickcr(this, 'tml.img', '', '', event);disabledEventPropagation(event);"><img class="lazyLoadImage" src="http://static.naver.net/terms/terms/img/e.gif" data-src="http://dthumb.phinf.naver.net/?src=http://dbscthumb.phinf.naver.net/3323_000_1/20150128173107400_YQAUAGNGM.jpg/A11AOOOOO742504.jpg?type=r128_1&wm=N&twidth=110&theight=83&opts=17" onerror="this.src='http://static.naver.net/terms/terms/img/noimg.gif';if(this.nextSibling)this.nextSibling.style.display='none';" alt="바리다제정"></a>
+				
+				
+			</span>
+		</div>
+		<span class="blank id2158981"></span>
+		
+		<dl>
+		<dt><a href="/entry.nhn?docId=2158981&cid=51000&categoryId=51000"><strong>바리다제정 [Varidase Tab.]</strong></a><!-- N=a:tml.termlist --> <a href="#" class="btn_add __TLIST_PUT" data-servicecode="TERMS" data-contentsid="2158981" onclick="clickcr(this, 'tml.kadd','', '', event)">담기</a></dt>
+		<dd class="dsc">[외형정보] · 성상 : 담홍색의 원형나정 · 제형 : 나정 · 모양 : 원형 · 색상 : 주황 · 식별표기 : SK-VRD [성분정보] 스트렙토키나제 10000IU, 스트렙토도르나제 2500IU [저장방법] 기밀용기, 실온(1~30℃)차광보관 [효능효과] 1. 다음 질환 및 증상의 염증성 부종의 완화 : 수술 및 외상후, 부비동염, 혈전정맥염 2. 호흡기 질환에 수반하는...</dd>
+		<dd class="related">
+			<p class="info">
+				<span><a href="/list.nhn?cid=51000&categoryId=51000">의약품 사전</a><!-- N=a:tml.source --></span>
+				
+				<span class="opinion on">조회<em>109,464</em></span>
+				
+				<span class="opinion on like-area" id="like2158981" data-serviceId="ENCYCLOPEDIA" data-docId="2158981" data-postfix="" style="display:none"><em></em></span>
+			</p>
+		</dd>
+		</dl>
+	</li>
+	
+	</ul>

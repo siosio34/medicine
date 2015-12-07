@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageIcon"
+        android:src="@drawable/icon_main"/>
+
+    <TextView
+        android:text="이약머약?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/titleTxt"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:onClick="onSearchBtnClicked"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="알약 검색"
+            android:id="@+id/searchBtn"
+            android:textSize="25sp" />
+
+        <Button
+            android:onClick="onLoginBtnClicked"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:id="@+id/loginBtn"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:onClick="onMapBtnClicked"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="지도검색"
+            android:id="@+id/mapBtn"
+            android:textSize="25sp" />
+
+        <Button
+            android:onClick="onHelpBtnClicked"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="도움말"
+            android:id="@+id/helpBtn"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="정보 저장을 하시려면 로그인 해주세요."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/loginTxt"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

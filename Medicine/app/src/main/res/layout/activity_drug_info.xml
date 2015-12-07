@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="siltarae.mytestapplication.LoginActivity">
+
+    <ImageView
+        android:onClick="imageIconClicked"
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageIcon"
+        android:src="@drawable/icon2"/>
+
+    <TableLayout
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:orientation="vertical">
+
+
+        <TableRow>
+            <TextView
+                android:text="이름"
+                android:textSize="25sp"
+                android:padding="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/medicineName"
+                android:gravity="left"
+                android:text="default"
+                android:textSize="25sp"
+                android:padding="10dp"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="색"
+                android:textSize="25sp"
+                android:gravity = "center"
+                android:padding="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/medicineColor"
+                android:gravity="left"
+                android:text="default"
+                android:textSize="25sp"
+                android:padding="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="모양"
+                android:textSize="25sp"
+                android:padding="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/medicineShape"
+                android:gravity="left"
+                android:text="default"
+                android:textSize="25sp"
+                android:padding="10dp"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+               android:layout_height="100dp"
+               android:text="설명"
+               android:textSize="25sp"
+               android:padding="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/medicineDescription"
+                android:gravity="left"
+                android:text="default"
+                android:textSize="18dp"
+                android:padding = "8dp"
+                android:lines="4"
+                android:layout_column="1" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

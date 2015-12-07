@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageIcon"
+        android:src="@drawable/icon2"/>
+
+    <TextView
+        android:text="이약머약?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/titleTxt"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:text="알약을 검색하기 위해 알약이 잘 보이게 사진을 찍어주세요."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/takePicTxt"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:onClick="onTakePicBtnClicked"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="알약 사진 찍기"
+        android:id="@+id/takePicBtn"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:visibility="visible" />
+
+    <Button
+        android:onClick="onSearchBtnClicked"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="알약 정보 확인"
+        android:id="@+id/searchBtn"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/medicinePic"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/sample"/>
+
+
+
+</LinearLayout>

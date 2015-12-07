@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지도 검색?"
+            android:id="@+id/help2_TitleTxt"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      GPS 기능을 이용하여 \n 현재 위치에서 일정반경 내 \n   약국의 위치를 검색한다"
+            android:id="@+id/help2_Text1Txt"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 1. GPS 기능을 On \n\n 2. 메인화면에서 '지도검새' 버튼클릭 \n\n 3. 주변 약국 위치 확인"
+            android:id="@+id/help2_Text2Txt"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:onClick="onHelpBackHomeClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/homeBtn"
+            android:src="@drawable/icon_home"
+            android:background="#00000000" />
+
+        <ImageButton
+            android:onClick="onHelpBackClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:id="@+id/backArrowBtn"
+            android:src="@drawable/icon_back"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+</LinearLayout>

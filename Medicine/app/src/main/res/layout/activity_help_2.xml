@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="알약 검색?"
+        android:id="@+id/help2_TitleTxt"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카메라로 알약 사진을 찍은 뒤 \n        사진을 분석하여 \n  알약의 종류를 검색합니다"
+            android:id="@+id/help2_Text1Txt"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 1.메인 화면에서 '알약검색' 버튼클릭 \n\n 2. '알약사진 찍기' 버튼클릭 \n\n 3. 사진 촬영 \n\n 4. 샘플사진을 확인한 후 '확인' 버튼클릭 \n\n 5. 알약 정보 확인"
+            android:id="@+id/help2_Text2Txt"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageButton
+        android:onClick="onHelpBackHomeClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/homeBtn"
+        android:src="@drawable/icon_home"
+        android:background="#00000000" />
+
+        <ImageButton
+            android:onClick="onHelpBackClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:id="@+id/backArrowBtn"
+            android:src="@drawable/icon_back"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="154dp"
+            android:layout_height="169dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imageIcon"
+            android:src="@drawable/icon_help"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도움말"
+            android:id="@+id/helpTxt"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:layout_marginTop="1dp"/>
+
+        <TextView
+            android:text="이약머약"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/helpPlus"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="1dp"/>
+
+        <Button
+            android:onClick="onHelp1BtnClicked"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="알약 검색"
+            android:id="@+id/helpBtn_1Txt"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:background="#00000000"
+            android:singleLine="false" />
+
+        <Button
+            android:onClick="onHelp2BtnClicked"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="지도 검색"
+            android:id="@+id/helpBtn_2Txt"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:background="#00000000"/>
+
+        <Button
+            android:onClick="onHelp3BtnClicked"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="로그인"
+            android:id="@+id/helpBtn_3Txt"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:background="#00000000"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,830 @@
+<table width="100%" cellspacing="0" cellpadding="0" border="1" bordercolor="#cecece" style="border-collapse:collapse; text-align:center;" class="topm">
+              <tr >
+                <th width="54" height="50"  bgcolor="#f3f3f3">
+<!-- 2012-08-08 진구 변경 : 등록번호가 없는 경우 접수 번호만 상단에 표현 한다 -->
+			
+접수번호<br />
+등록번호
+		</th>
+                <th width="54" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">이미지</th>
+               <!--  <th width="35" bgcolor="#f3f3f3">3D</th>          -->                       
+                <th width="65" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">
+                	신청일시
+                </th>
+                <th width="61" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">등록종류<br />등록상황</th>
+
+                <th width="40" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">표시<br />(앞)</th>
+                <th width="40" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">표시<br />(뒤)</th>   
+<th width="60" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">제형</th>   
+<th width="40" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">모양</th>   
+<th width="50" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">색깔</th>   
+
+                <th width="" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">제품명</th>
+                <th width="" bgcolor="#f3f3f3" style="font:bold 11px/14px dotum">신청사</th>
+   
+
+
+
+                          
+              </tr>
+              <!--리스트반복 -->
+
+
+
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29022&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-21오후 3:53:00">2015-10-21<!-- <br>오후 3:53:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				예비등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				셀파워정
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				정우신약
+			</td>                                
+			
+                 
+		</tr>
+		
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29021&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-21오후 3:44:00">2015-10-21<!-- <br>오후 3:44:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				비타디아에프연질캡슐
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				한국파비스제약
+			</td>                                
+			
+                 
+		</tr>
+		
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29020&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-21오후 3:38:00">2015-10-21<!-- <br>오후 3:38:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				폴리콜정
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				이든파마
+			</td>                                
+			
+                 
+		</tr>
+		
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29019&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-21오후 3:33:00">2015-10-21<!-- <br>오후 3:33:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				메만티정10밀리그램
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				비티오제약
+			</td>                                
+			
+                 
+		</tr>
+		
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29018&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-21오후 1:13:00">2015-10-21<!-- <br>오후 1:13:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				예비등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				생유정400밀리그램
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				종근당
+			</td>                                
+			
+                 
+		</tr>
+		
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29017&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-21오후 1:06:00">2015-10-21<!-- <br>오후 1:06:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				예비등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				대웅바이오두타스테리드연질캡슐0.5밀리그램
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				대웅바이오
+			</td>                                
+			
+                 
+		</tr>
+		
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29016&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-21오후 1:04:00">2015-10-21<!-- <br>오후 1:04:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				제이로바정
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				제이더블유중외신약
+			</td>                                
+			
+                 
+		</tr>
+		
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29015&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-21오전 11:07:00">2015-10-21<!-- <br>오전 11:07:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				변경등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				덴티유캡슐
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				한국프라임제약
+			</td>                                
+			
+                 
+		</tr>
+		
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29014&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-21오전 9:36:00">2015-10-21<!-- <br>오전 9:36:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				예비등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				휴렉손정
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				휴온스
+			</td>                                
+			
+                 
+		</tr>
+		
+		<tr onmouseover="change_bgcolor(this, '#dbdbdb');"  onmouseout="change_bgcolor(this, '#FFFFFF');">
+			
+			<td height="35px" style="padding-top:6px;padding-bottom:6px;margin:0px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" valign="center">
+<!--접수번호 -->
+
+29013&nbsp;</br>
+
+
+
+
+<!--등록번호 -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<!--썸네일 이미지 -->
+<td>
+
+				<A HREF="/common_files/asp/pop_sb.asp?sbcode=201508310000702" class="highslide" onclick="return hs.htmlExpand(this, { objectType: 'iframe', width:675 } )">
+					<img src="http://www.pharm.or.kr/images/product_img/photo1.gif" width="45" height="24" alt="Highslide JS" title="트리비스정 식별표시">
+				</A>	
+				
+	<div class='highslide-caption'>
+		<table border="0" cellpadding="0" cellspacing="0" width="98%">
+		  <tr>
+			<td align="left">
+
+			</td>
+			<td align="center" width="80"><A HREF="#" onclick="return hs.close(this)"><img src="/images/btn_pop_close.jpg" alt="" border="0" class="highslide-close"></A></td>
+		  </tr>
+		</table>
+	</div>
+
+
+			</td>
+			<!--3d -->
+			<!-- <td><a href="#" class="over_btn"><img src="/images/common/btn_3d01.gif" alt="3d"><img src="/images/common/btn_3d02.gif" class="over"></a></td>    -->                             
+			<!--신청일시/신청시간 -->
+			<td  style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum">
+				<SPAN title="2015-10-20오후 5:27:00">2015-10-20<!-- <br>오후 5:27:00 --></SPAN>
+			</td>
+			<!--등록종류/등록가능 -->
+			<td   style="cursor:pointer;letter-spacing:0px;font:normal 11px/16px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;">
+				등록&nbsp;<BR>접수&nbsp;
+			</td>
+
+
+
+			<!--표시(앞) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer " >
+				DS
+			</td>
+			<!--표시(뒤) -->
+			<td valign="middle" style="text-align:center;padding-left:3px;font:normal 11px/14px Times New Roman;cursor:pointer; " >
+				TB
+			</td>               
+
+<!-- 제형 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+
+필름코팅정&nbsp;<br>
+&nbsp;
+
+			</td>
+<!-- 모양 -->
+			<td valign="middle" style="text-align:center;padding-left:3px;cursor:pointer;letter-spacing:0px;font:normal 11px/14px dotum" >
+원형&nbsp;<br>
+&nbsp;
+			</td>
+
+
+<!-- 색깔 -->
+			<td valign="middle" style="text-align:center;padding-left:1px;cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum;background:url('/images/bgbg.gif') no-repeat;background-position:50% 30%;" >
+하양&nbsp;<br/>
+&nbsp;
+			</td>
+
+
+
+
+<!--품목명 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				트리비스정&nbsp;<A HREF="http://www.health.kr/drug_info/basedrug/show_detail_all.asp?table=basedrug&drugcode=2015083100007" target="_blank"><img src="/images/sub3/icon_info.gif" alt="제품정보" class="ver"></A>
+			</td>
+
+
+
+			<!--신청사 -->
+			<td   style="cursor:pointer;letter-spacing:-1px;font:normal 11px/14px dotum">
+				동성제약
+			</td>                                
+			
+                 
+		</tr>
+		
+            </table>
